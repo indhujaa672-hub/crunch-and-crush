@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Crunch & Crush</title>
+
+<link rel="stylesheet" href="checkout.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="checkout-container">
+
+    <h1>🍔 Checkout</h1>
+
+    <form id="checkoutForm">
+
+        <div class="input-group">
+            <label>Customer Name</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="input-group">
+            <label>Phone Number</label>
+            <input type="tel" id="phone" required>
+        </div>
+
+        <div class="input-group">
+            <label>Delivery Address</label>
+            <textarea id="address" rows="4" required></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>Payment Method</label>
+
+            <select id="payment" required>
+                <option value="">Select Payment Method</option>
+                <option>Cash On Delivery</option>
+                <option>UPI</option>
+                <option>Credit/Debit Card</option>
+            </select>
+        </div>
+
+        <button type="submit" class="place-order-btn">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

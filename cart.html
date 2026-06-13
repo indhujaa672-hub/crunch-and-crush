@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crunch & Crush Cart</title>
+<link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+<div class="cart-container">
+
+    <h1>🛒 Your Cart</h1>
+
+    <div class="cart-item">
+
+        <img src="images/burger.jpg" alt="Burger">
+
+        <div class="item-details">
+            <h3>Cheese Burger</h3>
+            <p class="price">₹149</p>
+
+            <div class="quantity-box">
+                <button class="minus">-</button>
+                <span class="quantity">1</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+
+        <button class="remove-btn">Remove</button>
+
+    </div>
+
+    <div class="cart-item">
+
+        <img src="images/oreo-shake.jpg" alt="Shake">
+
+        <div class="item-details">
+            <h3>Oreo Shake</h3>
+            <p class="price">₹119</p>
+
+            <div class="quantity-box">
+                <button class="minus">-</button>
+                <span class="quantity">1</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+
+        <button class="remove-btn">Remove</button>
+
+    </div>
+
+    <div class="cart-summary">
+
+        <h2>Total: ₹<span id="total">268</span></h2>
+
+        <button class="checkout-btn"
+onclick="window.location.href='checkout.html'">
+Proceed To Checkout
+</button>
+
+    </div>
+
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
